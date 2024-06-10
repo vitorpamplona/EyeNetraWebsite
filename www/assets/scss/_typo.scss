@@ -1,0 +1,106 @@
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,700|Montserrat);*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro:300,400,700');
+
+body{
+  font-size: 14px;
+  line-height: 1.428571429;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:400;
+    @include bp-xsmall{
+      font-size:12px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 400;
+    line-height: 1.4em;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+h2{
+  color:lighten($netra-gray, 10%);
+  font-weight: 400;
+}
+
+.multi-column{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+     -moz-column-count: 2; /* Firefox */
+       -ms-colum-count: 2;
+          column-count: 2;
+
+  @include bp-xsmall{
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+       -moz-column-count: 1; /* Firefox */
+         -ms-colum-count: 1;
+            column-count: 1;
+               font-size: 1em;
+  }
+}
+
+.padding-top-10{
+  padding-top:15px;
+}
+
+.padding-bottom-10{
+  padding-bottom:15px;
+}
+
+.padding-bottom-45{
+  padding-bottom:45px;
+  @include bp-xsmall{
+    padding-bottom:5px;
+  }
+}
+
+.padding-top-bottom-45{
+  padding-top:45px;
+  padding-bottom:45px;
+  @include bp-xsmall{
+    padding-top:15px;
+    padding-bottom:15px;
+  }
+}
+
+.padding-top-bottom-200{
+  padding-top:200px;
+  padding-bottom:200px;
+  @include bp-xsmall{
+    padding-top:50px;
+    padding-bottom:50px;
+  }
+}
+
+.margin-top-0{
+  margin-top:0;
+}
+
+.margin-top-20{
+  margin-top:20px;
+}
+
+.margin-bottom-15{
+  margin-bottom:15px;
+}
+
+.lead{
+  @include bp-small{
+    font-size:18px;
+  }
+  @include bp-medium{
+    font-size:18px;
+  }
+  @include bp-large{
+    font-size:16px;
+  }
+}

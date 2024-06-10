@@ -1,0 +1,343 @@
+#page-top{
+	h2{
+		color:$netra-blue;
+	}
+	.blue-bar{
+		h2{
+			color: $white;
+		}
+	}
+}
+
+/* carousel */
+#quote-carousel {
+		padding: 0 10px 30px;
+		margin-top: 30px;
+		min-height:200px;
+}
+/* Control buttons	*/
+#quote-carousel .carousel-control {
+		background: none;
+		color: #222;
+		font-size: 2.3em;
+		text-shadow: none;
+		margin-top: 30px;
+}
+/* Previous button	*/
+#quote-carousel .carousel-control.left {
+		left: -12px;
+}
+/* Next button	*/
+#quote-carousel .carousel-control.right {
+		right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators {
+		right: 50%;
+		top: auto;
+		bottom: 0;
+		margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li {
+		background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active {
+		background: #333333;
+}
+#quote-carousel img {
+		width: 250px;
+		height: 100px;
+}
+/* End carousel */
+.item blockquote {
+		border-left: none;
+		margin: 0;
+}
+.item blockquote img {
+		margin-bottom: 10px;
+}
+.item blockquote p:before {
+		content: "\f10d";
+		font-family: 'Fontawesome';
+		float: left;
+		margin-right: 10px;
+}
+/**
+	MEDIA QUERIES
+*/
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+	#quote-carousel{
+		padding-left:0;
+		padding-right:0;
+		margin-top:0;
+		margin-bottom:25px;
+
+		.carousel-indicators {
+			bottom: -10px !important;
+			li {
+				display: inline-block;
+				margin: 0 5px;
+				width: 15px;
+				height: 15px;
+				border-color:transparent;
+				background-color:white;
+
+				&.active {
+					margin: 0 5px;
+					width: 20px;
+					height: 20px;
+				}
+			}
+		}
+		.carousel-inner{
+			padding: 0;
+			.item p, .item small{
+				text-align:center;
+			}
+		}
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	#quote-carousel {
+			margin-bottom: 25px;
+			padding: 0 40px 30px;
+			
+			.carousel-inner{
+				.item p, .item small{
+					text-align:left;
+				}
+			}
+	}
+}
+
+#plan-grows {
+	background-color: $netra-bluegray;
+	background-repeat:no-repeat;	
+
+	@include bp-xsmall{
+		background-image: url("../images/home/record-bg.png");
+	}
+	@include bp-small{
+		background-image: url("../images/home/record-bg.png");
+	}
+	@include bp-medium{
+		background-image: url("../images/home/arrow-record-bg.png");
+		background-size:cover;
+		background-position: center -36px;
+		padding-bottom:20px;					
+	}
+
+	@include bp-large{
+		background-image: url("../images/home/arrow-record-bg.png");
+		background-size:cover;
+		background-position: center -34px;
+		padding-bottom:40px;
+	}
+
+	@include bp-xlarge{
+		background-image: url("../images/home/record-bg.png");		
+	}
+
+	.container{
+		h2{
+			color: $white;
+			margin-top:45px;
+			@include bp-small{
+				margin-bottom: 0px;
+			}
+			@include bp-medium{
+				margin-bottom: 30px;
+			}
+		}
+		p{
+			color: $white;
+			padding: 10px 40px 0px 40px;
+			@include shadow-text;
+
+			@include bp-xsmall{
+				text-align: center;
+				padding-left:0px;
+				padding-right:0px;
+			}
+
+			@include bp-small{
+				text-align: center;
+			}
+		}
+	}
+	.panel {
+		border: solid 1px $netra-blue;
+		background-color: $netra-bluegray;
+		margin-bottom:20px;
+
+		@include bp-small{
+			margin-left:0px;
+			margin-right:0px;
+		}
+
+		@include bp-medium{
+			margin-left:0px;
+			margin-right:0px;
+		}
+
+		@include bp-large{
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+
+		h3 {
+			color: $netra-blue;
+		}
+	}
+}
+
+.plan-grows-features {
+	ul {
+		list-style-type: none;
+		margin: 0 10px 10px 10px;
+		padding: 0;
+		
+		li {
+			color:$white;
+			width: 100%;
+			text-align: center;
+			line-height: 32px;
+			border-bottom-width: 1px;
+			border-bottom-style: dashed;
+			border-bottom-color: $netra-blue;
+
+			@include bp-small{
+				font-size:.8em;
+			}
+			&:last-child {
+				border-bottom-color: transparent;
+			}
+		}
+	}
+}
+#personal {
+	@include bp-xsmall{
+		margin-top:10px;
+	}
+
+	@include bp-small{
+		margin-top: 35px;
+	}
+
+	@include bp-medium{
+		margin-top: 132px;
+	}
+
+	@include bp-large{
+		margin-top: 132px;
+	}
+}
+#practice {
+	@include bp-xsmall{
+		margin-top:0px;
+	}
+	@include bp-small{
+		margin-top: 0px;
+	}
+	@include bp-medium{
+		margin-top: 33px;
+	}	
+	@include bp-large{
+		margin-top: 33px;
+	}
+}
+#enterprise {
+	margin-top: 0px;
+}
+
+#ready-to-try{
+	padding-top:200px;
+	padding-bottom:200px;
+
+	&::before{
+		background-image: url("../images/product/ideias/ideia1-big.png");
+		background-size:cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment:fixed;
+		content: " ";
+		opacity:.2;
+		display:block;
+		position:absolute;
+		width:100%;
+		height:100%;
+		left:0;
+		top:0;
+		bottom:0;
+		right:0;
+		z-index:-1;
+
+	}
+	.btn-pill{
+			margin-top:25px;
+			margin-bottom:0;
+	}
+	.btn-lg{
+		margin-left:15px;
+		margin-right:15px;
+	}
+	h3{
+		margin-top:0;
+	}
+}
+
+
+#ready-to-try-2{
+	position: relative;
+	overflow: hidden;
+	background: rgba(255,255,255,.8);
+	&::before{
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index:-1;
+		opacity: 1;
+		background-image: url("../images/onsight/cubicle_office.jpg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		-ms-background-size: contain;
+		-o-background-size: contain;
+		-moz-background-size: contain;
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
+	.container{
+		padding-top:200px;
+		padding-bottom:200px;
+		opacity:1;
+	}
+
+	.btn-pill{
+		margin-top:25px;
+		margin-bottom:0;
+		border-color:$netra-purple;
+		color:$netra-purple;
+		&:hover{
+			color:$white;
+			background-color:$netra-purple;
+		}
+		@include bp-xsmall{
+			margin-top:5px;
+		}
+	}
+	.btn-lg{
+		margin-left:15px;
+		margin-right:15px;
+	}
+	h2{
+		margin-top:0;
+	}
+}

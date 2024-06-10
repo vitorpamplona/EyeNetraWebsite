@@ -1,0 +1,113 @@
+#calltoaction-link-netrag {
+  &.blue-bar {
+    margin-top: 0px;
+    h4 {
+      margin: 32px auto;
+      a {
+        text-transform: uppercase;
+        color: $netra-white;
+        text-decoration: none;
+        border: solid 1px transparent;
+        background-color: transparent;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        @include rounded-corner(4px);
+
+        &:hover {
+          border-color: lighten($netra-blue, 50%);
+          @include animate-basic;
+        }
+      }
+    }
+  }
+}
+
+#cta-store{
+  height: 130px;
+
+  h1,
+  h2{
+    color: white;
+  }
+
+  p.cta-button{
+    line-height: 130px;
+    display: block;
+    text-align: right;
+    vertical-align: middle;
+
+    .lead a{
+      color: #fff;
+    }
+
+    .btn{
+      border-color: white;
+      background-color: transparent;
+      color: white;
+      @include animate-basic;
+      
+      &:hover{
+        background-color: #00568d;
+        border-color: #00568d;
+        padding: 30px 24px;
+        @include rounded-corner(6px);
+      }
+    }
+    @include bp-xsmall{
+      line-height:1.4em;
+      text-align:center;
+    }
+  }
+
+  @include bp-small{
+    .lead{
+      font-size:18px;
+    }
+    .cta-button{
+      margin-bottom:0;
+
+      h2{
+        margin-top:25px;
+      }
+    }
+  }
+
+  @include bp-xsmall{
+    height:auto;
+    text-align:center;
+    padding-bottom:10px;
+    h2{
+      font-size:24px;
+    }
+    .lead{
+      font-size:14px;
+    }
+  }
+}
+
+.white-bar{
+  background-color:$white;
+  padding-bottom:25px;
+}
+
+.blue-bar {
+    background-color: lighten($netra-blue, 10%);
+    color: $netra-white;
+
+    .btn-pill{
+      border-color:$white;
+      color:$white;
+    }
+
+    h2{
+      color: $white;
+    }
+}
+
+.purple-bar{
+  background-color:$netra-purple;
+  padding-top:45px;
+  padding-bottom:45px;
+}

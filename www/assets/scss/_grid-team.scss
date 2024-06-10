@@ -1,0 +1,21 @@
+.team-list{
+    a{
+      text-decoration:none;
+      &:focus,&:active,&:visited{
+          outline: thin dotted transparent;
+          // WebKit
+          outline: 5px auto -webkit-focus-ring-color;
+          outline-offset: -2px;
+      }
+
+    }
+    h5{
+      color:$netra-gray;
+    }
+}
+.popover{
+  width:240px;
+  .popover-content{
+    text-align:left;
+  }
+}

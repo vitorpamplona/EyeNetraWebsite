@@ -1,0 +1,50 @@
+.btn-pill {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 300;
+    color: $netra-blue;
+    background-color: transparent;
+    border-color: lighten($netra-blue, 10%);
+    @include animate-basic;
+    @include rounded-corner(50px);
+    text-shadow: none;
+    &:hover {
+        background-color: $netra-blue;
+        border-color: $netra-blue;
+        color: $netra-white;
+    }
+}
+.btn-xlg {
+    padding: 20px 32px;
+    font-size: 24px;
+    line-height: 1.3333333;
+}
+
+.btn-pill-purple {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 300;
+    color: $white;
+    background-color: $netra-purple;
+    border-color: lighten($netra-purple, 10%);
+    @include animate-basic;
+    @include rounded-corner(50px);
+    &:hover {
+        background-color: $white;
+        border-color: $netra-purple;
+        color: $netra-purple;
+    }
+}
+
+#jointheOnsight .btn.hidden-lg{
+
+     @include bp-xsmall{
+         font-size: 16px;
+     }
+     
+     @include bp-small{
+         font-size:18px;
+     }     
+}

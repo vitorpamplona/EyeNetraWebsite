@@ -1,0 +1,228 @@
+#header {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  height:100%;
+  text-align: center;
+  color: #fff;
+  background-image: url('../images/full-eyenetra-pack.JPG');
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  opacity:.99;
+
+  &::before{
+    content: " ";
+    background-color:darken($netra-blue, 30%);
+    opacity:.5;
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    z-index:-1;
+  }
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    @include shadow-text;
+  }
+  p {
+    margin-bottom: 50px;
+    color: rgba(255,255,255,1);
+    font-size:18px;
+    @include shadow-text;
+  }
+  .btn-pill{
+    background-color:$netra-blue;
+    color:$netra-white;
+
+    &:hover{
+      background-color:$netra-white;
+      border-color:transparent;
+      color:$netra-blue;
+      //padding-left:30px;
+      //padding-right:30px;
+    }
+  }
+// talvez deletar
+  .header-content-container{
+    height: 100%;
+  	width: 100%;
+  	display: table;
+    .header-content{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      width: 100%;
+
+    }
+  }
+}
+
+.header-content {
+  position: relative;
+  width: 100%;
+  padding: 40px 15px;
+  text-align: center;
+}
+
+  @include bp-xsmall{
+    min-height: 100%;
+    .header-content {
+      position: absolute;
+      top: 50%;
+      padding: 0 50px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      .header-content-inner {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1000px;
+        p {
+          margin-right: auto;
+          margin-left: auto;
+          max-width: 80%;
+          font-weight:600;
+        }
+        h1{
+          font-size:30px;
+        }
+      }
+    }
+  }
+  @include bp-large{
+    .header-content{
+      padding:100px 15px;
+    }
+  }
+
+.header{
+  height:400px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity:.9;
+
+  &::before{
+    content: " ";
+    background-color:darken($netra-blue, 30%);
+    opacity:.4;
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    z-index:-1;
+  }
+
+  h1 {
+    margin-top: 20px;
+    font-weight:200;
+    color:$netra-white;
+    @include shadow-text;
+    text-transform:uppercase;
+    font-size:38px;
+  }
+
+  p{
+    color:$netra-white;
+    @include shadow-text;
+  }
+  @include bp-xsmall{
+    height:250px;
+    h1{
+      font-size:24px;
+    }
+  }
+
+  @include bp-small{
+    h1{
+      font-size:30px;
+    }
+  }
+
+}
+
+.header-big{
+  height:500px;
+  opacity:1;
+  background-repeat: repeat-x;
+  background-attachment: scroll;
+
+  background-image: url('../images/product/bg-header.png');
+  background-position: bottom left;
+  background-size:contain;
+
+  @include bp-xsmall{
+    height:320px;
+  }
+
+  .container{
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
+  .caption-area{
+    height:500px;
+    display:table-cell;
+    vertical-align:bottom;
+
+    @include bp-xsmall{
+      height:320px;
+    }
+
+    h1{
+      font-weight:200;
+      color:$netra-white;
+      text-transform:uppercase;
+      position:absolute;
+      top:34px;
+      
+      @include shadow-text;
+
+      @include bp-xsmall{
+        font-size:24px;
+        text-align:center;
+        width:90%;
+        left:15px;
+        right:15px;
+        top:0px;
+      }
+
+      @include bp-small{
+        font-size:30px;
+        text-align:left;
+        width:100%;
+      }
+
+      @include bp-medium{
+        font-size:40px;
+        text-align:left;
+        width:100%;
+      }
+
+      @include bp-large{
+        font-size:48px;
+        text-align:left;
+        width:100%;
+        position:absolute;
+      }
+    }
+  }
+}

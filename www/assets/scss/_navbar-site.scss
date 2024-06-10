@@ -1,0 +1,162 @@
+#navbar-mainmenu{
+    border-color: transparent;
+    background-color: $netra-blue;
+    border:none;
+
+    .navbar-brand{
+      display:block;
+      height:auto;
+      padding:0 0 0 15px;
+      img{
+        max-height:50px;
+      }
+
+      @include bp-small{
+        img{
+          max-height:50px;
+        }
+      }
+      @include bp-xsmall{
+        padding:0 0 0 5px;
+      }
+    }
+    @include bp-xsmall{
+      .navbar-collapse{
+        .nav{
+          li{
+            a{
+              line-height:50px;
+            }
+          }
+        }
+      }
+      .navbar-toggle{
+        margin-top:10px;
+        border-color:transparent;
+        span{
+          background-color:$white;
+        }
+        &:hover, &:focus{
+          background-color:darken($netra-blue,20%);
+          @include rounded-corner(2px);
+        }
+        @include bp-xsmall{
+          margin-right:5px;
+        }
+      }
+    }
+  &.navbar{
+    margin-bottom:0;
+  }
+  .navbar-nav{
+    li{
+      a{
+        line-height:80px;
+        vertical-align:middle;
+        padding-top:0;
+        padding-bottom:0;
+        color: $netra-white;
+        font-weight:300;
+        font-size:1.2em;
+        cursor:pointer;
+        
+        @include animate-basic;
+
+        &#signin{
+          background-color: darken($netra-blue, 10%);
+          color: #fff;
+          line-height: 38px;
+          margin-top: 6px;
+          border-radius: 4px;
+          @include bp-xsmall{
+            border-radius: 0px;
+          }          
+          @include bp-small{
+            border-radius: 4px;
+          }
+          @include bp-medium{
+            border-radius: 4px;
+          }
+          i{
+            padding-left:4px;
+          }
+          &:hover{
+            background-color: darken($netra-blue, 30%);
+            box-shadow: 0 0px 3px rgba(0,0,0,.75);
+            text-shadow: 0 0px 3px rgba(255,255,255,1);
+          }
+        }
+
+
+        &.active{
+          background-color: $netra-white;
+          color:$netra-blue;
+        }
+
+        &:hover{
+          color:$netra-gray;
+        }
+      }
+      &.submenu{
+        background-color:$netra-white;
+
+        a{ color:$netra-gray;}
+        i{ margin-right:10px; }
+
+        &.sub-active{
+          background-color:lighten($netra-blue,30%);
+          a,i{
+            color:$netra-blue;
+          }
+        }
+      }
+    }
+    @include bp-small{
+      li{
+        a{
+          font-size:14px;
+          line-height:50px;
+        }
+      }
+    }
+  }
+}
+
+#navbar-submenu{
+  &.navbar{
+    border:none;
+    min-height:48px;
+    margin-bottom:0;
+    background-color:$netra-white;
+    @include rounded-corner(0px);
+
+    a{
+      text-transform:uppercase;
+      line-height:46px;
+      vertical-align:middle;
+      padding-top:0;
+      padding-bottom:0;
+      margin-top:0;
+      margin-bottom:0;
+      color:$netra-gray;
+      font-family:"Montserrat";
+      border-bottom-width:2px;
+      border-bottom-color:transparent;
+      border-bottom-style:solid;
+
+      @include animate-basic;
+
+      &:hover{
+        color:$netra-white;
+        background-color:lighten($netra-blue, 10%);
+      }
+    }
+    .active a{
+      border-bottom-color:lighten($netra-blue, 10%);
+      background-color:transparent;
+      &:hover{
+        color:$netra-blue;
+      }
+    }
+  }
+}

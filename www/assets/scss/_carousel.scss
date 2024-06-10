@@ -1,0 +1,60 @@
+.carousel {
+  height: 500px;
+  margin-bottom:0;
+  .item {
+    //height: 500px;
+    height: 500px;
+    width:100%;
+    overflow:hidden;
+
+    .carousel-caption {
+      z-index: 10;
+      text-align:left;
+      height:100%;
+      padding:25px;
+      margin:0;
+      width:320px;
+      bottom:0;
+      background-color: transparentize($netra-gray, .5);
+
+      h2,p{
+        text-shadow:none;
+      }
+
+      h2{
+        //color:$netra-blue;
+        font-weight:200;
+      }
+
+      .btn-pill{
+        border-color:$netra-white;
+        color:$netra-white;
+      }
+    }
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .carousel-inner > .item > img {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    margin:auto auto;
+    max-width: 100%;
+    max-height:100%;
+
+  }
+  .carousel-indicators{
+    li{
+      border: 3px solid transparentize($netra-gray, .5);
+    }
+  }
+}

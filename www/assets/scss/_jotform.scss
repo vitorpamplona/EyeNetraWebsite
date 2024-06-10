@@ -1,0 +1,51 @@
+.form-label-left{
+    width:150px !important;
+}
+.form-line{
+    padding-top:12px;
+    padding-bottom:12px;
+}
+.form-label-right{
+    width:150px !important;
+}
+
+.form-all{
+    margin:0px auto;
+    padding-top:0;
+    width:100%;
+    color:$netra-gray !important;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-repeat: repeat;
+    background-color:transparent;
+
+    .form-submit-button{
+      -webkit-border-radius: 40px;
+      -moz-border-radius: 40px;
+      border-radius: 40px;
+      background:$netra-blue;
+      border-color:$netra-blue;
+      color:$netra-white;
+      font-size:18px;
+
+      padding-left:25px;
+      padding-right:25px;
+      text-shadow:none;
+      box-shadow:none;
+
+      @include animate-basic;
+
+      &:hover{
+        background: lighten($netra-blue, 10%);
+
+      }
+
+    }
+}
+
+.form-line {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 12px 36px 12px 0px;
+}

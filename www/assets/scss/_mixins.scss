@@ -1,0 +1,54 @@
+@mixin animate-basic {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  animation-delay: all 2s ease;
+  -webkit-animation-delay: all 2s ease;
+}
+
+@mixin shadow-text{
+  text-shadow: 0px 3px 8px darken($netra-gray,50%);
+}
+
+@mixin box-shadow($shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+          box-shadow: $shadow;
+}
+
+@mixin rounded-corner($arc) {
+    -moz-border-radius: $arc;
+    -webkit-border-radius: $arc;
+    border-radius: $arc;
+}
+
+@mixin bp-xlarge{
+  @media screen and (min-width: 1441px) {
+		@content;
+	}
+}
+
+@mixin bp-large {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media screen and  (min-width:768px) {
+    @content;
+  }
+}
+
+@mixin bp-xsmall {
+  @media screen and (max-width:768px) {
+    @content;
+  }
+}	
