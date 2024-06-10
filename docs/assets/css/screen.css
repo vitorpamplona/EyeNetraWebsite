@@ -2019,71 +2019,6 @@ footer ul li a:hover {
     }
 }
 
-.team {
-    background-image: url("../images/aboutus/team/header-team-page.jpg");
-    background-position: center center
-}
-
-@media screen and (max-width: 768px) {
-    .team {
-        background-position: top center;
-        -webkit-background-size: 324%;
-        -moz-background-size: 324%;
-        -o-background-size: 324%;
-        background-size: 324%
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .team {
-        background-position: top center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .team {
-        background-position: center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .team {
-        background-position: center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover
-    }
-}
-
-.team-consultant-list a {
-    display: block
-}
-
-.team-list a {
-    text-decoration: none
-}
-
-.team-list a:focus,
-.team-list a:active,
-.team-list a:visited {
-    outline: thin dotted transparent;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px
-}
-
-.team-list h5 {
-    color: #484c56
-}
-
 .popover {
     width: 240px
 }
@@ -2171,50 +2106,6 @@ footer ul li a:hover {
     }
     .news-awards-list .media-body {
         text-align: center
-    }
-}
-
-.joinus {
-    background-image: url("../images/aboutus/joinus/pano-joinus.jpg")
-}
-
-@media screen and (max-width: 768px) {
-    .joinus {
-        background-position: right 80px;
-        -webkit-background-size: 480%;
-        -moz-background-size: 480%;
-        background-size: 480%;
-        -o-background-size: 480%
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .joinus {
-        background-position: center left;
-        -webkit-background-size: 300%;
-        -moz-background-size: 300%;
-        background-size: 300%;
-        -o-background-size: 300%
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .joinus {
-        background-position: center left;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .joinus {
-        background-position: center -387px;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover
     }
 }
 

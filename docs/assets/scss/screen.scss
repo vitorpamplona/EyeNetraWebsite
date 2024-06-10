@@ -279,45 +279,6 @@ section {
         }
     }
 }
-// //
-// team --
-.team {
-    background-image: url('../images/aboutus/team/header-team-page.jpg');
-    background-position: center center;
-    @include bp-xsmall {
-        background-position: top center;
-        -webkit-background-size: 324%;
-        -moz-background-size: 324%;
-        -o-background-size: 324%;
-        background-size: 324%;
-    }
-    @include bp-small {
-        background-position: top center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    @include bp-medium {
-        background-position: center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    @include bp-large {
-        background-position: center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-}
-.team-consultant-list {
-    a {
-        display: block;
-    }
-}
 @import 'grid-team'; // //
 // press and awards --
 .pressawards {
@@ -382,40 +343,7 @@ section {
         }
     }
 }
-// //
-// joinus  --
-.joinus {
-    background-image: url('../images/aboutus/joinus/pano-joinus.jpg');
-    //background-position: center -150px;
-    @include bp-xsmall {
-        background-position: right 80px;
-        -webkit-background-size: 480%;
-        -moz-background-size: 480%;
-        background-size: 480%;
-        -o-background-size: 480%;
-    }
-    @include bp-small {
-        background-position: center left;
-        -webkit-background-size: 300%;
-        -moz-background-size: 300%;
-        background-size: 300%;
-        -o-background-size: 300%;
-    }
-    @include bp-medium {
-        background-position: center left;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-    }
-    @include bp-large {
-        background-position: center -387px;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-size: cover;
-        -o-background-size: cover;
-    }
-}
+
 .panel-title {
     .accordion-toggle {
         text-decoration: none;
